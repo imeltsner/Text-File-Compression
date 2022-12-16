@@ -23,7 +23,6 @@ public class CharCounter {
             Scanner scan = new Scanner(trainingFile);
             while (scan.hasNext()) {
                 String word = scan.next();
-                //[] letters = word.split("");
                 for (int i = 0; i < word.length(); i++) {
                     String letter = "" + word.charAt(i);
                     if ((letter.codePointAt(0) < 255 && letter.codePointAt(0) > 6) || letter.codePointAt(0) == 4) {
